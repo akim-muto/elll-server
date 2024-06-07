@@ -1,1 +1,0 @@
-{"version":3,"file":"InlineValue.flyde.d.ts","sourceRoot":"","sources":["../../../src/lib/Value/InlineValue.flyde.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,SAAS,EAAE,MAAM,aAAa,CAAC;AAExC,MAAM,WAAW,iBAAiB;IAChC,IAAI,EAAE,QAAQ,GAAG,SAAS,GAAG,QAAQ,GAAG,MAAM,GAAG,eAAe,CAAE;IAClE,KAAK,EAAE,MAAM,CAAC;IACd,KAAK,EAAE,MAAM,CAAC;CACf;AAED,eAAO,MAAM,WAAW,EAAE,SAAS,CAAC,iBAAiB,CAyCpD,CAAC"}
