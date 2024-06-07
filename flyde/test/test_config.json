@@ -1,0 +1,11 @@
+{
+    "installPath":{
+        "vscodeExtinsionPath":"c://users/{user name}/.vscode/extensions/flyde.flyde-vscode-0.62.0/node_modules/@flyde/stdlib/dist",
+        "nodePath":"/Values",
+        "macroEditorPath":"/ui",
+        "nodePathEntry":"/index.js",
+        "nodeLibraryEntry":"/nodes-library-data.js",
+        "nodefileName":"Macro.flyde",
+        "nodeEditorName":"Macro"
+    }
+}

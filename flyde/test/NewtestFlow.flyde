@@ -1,0 +1,20 @@
+imports:
+  ..\src\lib\Value\simpleselect.flyde.ts:
+    - simpleselect
+node:
+  instances:
+    - pos:
+        x: -335.17271240234373
+        y: -50.091705322265625
+      id: x0jaaha4468ek9e30uyko3s7
+      inputConfig: {}
+      nodeId: simpleselect__x0jaaha4468ek9e30uyko3s7
+      macroId: simpleselect
+      macroData:
+        url: https://test.com/a.png
+  connections: []
+  id: NewtestFlow
+  inputs: {}
+  outputs: {}
+  inputsPosition: {}
+  outputsPosition: {}

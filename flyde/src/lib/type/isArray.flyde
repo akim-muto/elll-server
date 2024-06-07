@@ -1,0 +1,47 @@
+imports:
+  "@flyde/stdlib":
+    - CodeExpression
+  src\lib\Value\InlineValue.flyde.js: []
+node:
+  instances:
+    - pos:
+        x: -234.54799072265627
+        y: -15.609819335937516
+      id: xoaa7ir8at2z68wt9nb30sfx
+      inputConfig: {}
+      nodeId: CodeExpression__xoaa7ir8at2z68wt9nb30sfx
+      macroId: CodeExpression
+      macroData:
+        value: " Array.isArray(inputs.a)"
+        label: '"isArray(a):boolean"'
+  connections:
+    - from:
+        insId: __this
+        pinId: object
+      to:
+        insId: xoaa7ir8at2z68wt9nb30sfx
+        pinId: a
+    - from:
+        insId: xoaa7ir8at2z68wt9nb30sfx
+        pinId: value
+      to:
+        insId: __this
+        pinId: boolean
+  id: isArray
+  inputs:
+    object:
+      mode: required
+  outputs:
+    boolean:
+      delayed: false
+  inputsPosition:
+    object:
+      x: -164.07371337890626
+      y: -208.7117785644531
+  outputsPosition:
+    result:
+      x: -23.264428942324532
+      y: 237.25953921502617
+    boolean:
+      x: -164.35090820312502
+      y: 268.3875732421875

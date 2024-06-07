@@ -1,0 +1,139 @@
+imports:
+  "@flyde/stdlib":
+    - InlineValue
+    - Collect
+node:
+  instances:
+    - pos:
+        x: -545.8123339843751
+        y: -97.18501098632814
+      id: ojcpzfemxpkl8g0yap50dy4u
+      inputConfig: {}
+      nodeId: InlineValue__ojcpzfemxpkl8g0yap50dy4u
+      macroId: InlineValue
+      macroData:
+        type: string
+        value: string
+        label: '"string"'
+    - pos:
+        x: -357.372392578125
+        y: -161.00034912109376
+      id: ulwkgj9o1qmxclzh6adebntj
+      inputConfig: {}
+      nodeId: InlineValue__ulwkgj9o1qmxclzh6adebntj
+      macroId: InlineValue
+      macroData:
+        type: string
+        value: json
+        label: '"json"'
+    - pos:
+        x: -549.8271044921876
+        y: -210.5114306640625
+      id: nbevju2fvm3r92hlco2bga0c
+      inputConfig: {}
+      nodeId: InlineValue__nbevju2fvm3r92hlco2bga0c
+      macroId: InlineValue
+      macroData:
+        type: string
+        value: boolean
+        label: '"boolean"'
+    - pos:
+        x: -376.41200439453127
+        y: -212.3198107910156
+      id: uym090ujsesvaksh09uo40c3
+      inputConfig: {}
+      nodeId: InlineValue__uym090ujsesvaksh09uo40c3
+      macroId: InlineValue
+      macroData:
+        type: string
+        value: number
+        label: '"number"'
+    - pos:
+        x: -560.5522900390624
+        y: -163.01657104492188
+      id: ylvhyydjp4grrqzkqhsa1nh7
+      inputConfig: {}
+      nodeId: InlineValue__ylvhyydjp4grrqzkqhsa1nh7
+      macroId: InlineValue
+      macroData:
+        type: string
+        value: Array<string>
+        label: '"Array<string>"'
+    - pos:
+        x: -112.212158203125
+        y: 51.618743896484375
+      id: gpgmw762p7wakqtdupc0i154
+      inputConfig: {}
+      nodeId: Collect__gpgmw762p7wakqtdupc0i154
+      macroId: Collect
+      macroData:
+        strategy: count
+        count:
+          mode: dynamic
+    - pos:
+        x: 92.94976806640625
+        y: -216.52194213867188
+      id: hhb5kr8kdfh02nutygs57evx
+      inputConfig: {}
+      nodeId: InlineValue__hhb5kr8kdfh02nutygs57evx
+      macroId: InlineValue
+      macroData:
+        value: 5
+        type: number
+        label: "5"
+  connections:
+    - from:
+        insId: uym090ujsesvaksh09uo40c3
+        pinId: value
+      to:
+        insId: gpgmw762p7wakqtdupc0i154
+        pinId: value
+    - from:
+        insId: nbevju2fvm3r92hlco2bga0c
+        pinId: value
+      to:
+        insId: gpgmw762p7wakqtdupc0i154
+        pinId: value
+    - from:
+        insId: ulwkgj9o1qmxclzh6adebntj
+        pinId: value
+      to:
+        insId: gpgmw762p7wakqtdupc0i154
+        pinId: value
+    - from:
+        insId: ylvhyydjp4grrqzkqhsa1nh7
+        pinId: value
+      to:
+        insId: gpgmw762p7wakqtdupc0i154
+        pinId: value
+    - from:
+        insId: hhb5kr8kdfh02nutygs57evx
+        pinId: value
+      to:
+        insId: gpgmw762p7wakqtdupc0i154
+        pinId: count
+    - from:
+        insId: gpgmw762p7wakqtdupc0i154
+        pinId: list
+      to:
+        insId: __this
+        pinId: list
+    - from:
+        insId: ojcpzfemxpkl8g0yap50dy4u
+        pinId: value
+      to:
+        insId: gpgmw762p7wakqtdupc0i154
+        pinId: value
+  id: typeListObj
+  inputs: {}
+  outputs:
+    list:
+      delayed: false
+  inputsPosition: {}
+  outputsPosition:
+    result:
+      x: -23.264428942324532
+      y: 237.25953921502617
+    list:
+      x: -36.181379394531234
+      y: 212.84693725585936

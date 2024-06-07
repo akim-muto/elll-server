@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+      "module": "commonjs",
+      "target": "es2019",
+      "strict": false,
+
+      "noFallthroughCasesInSwitch": true,
+      "noImplicitOverride": true,
+      "noImplicitReturns": false,
+      "noUncheckedIndexedAccess": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "checkJs": true,
+  
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "lib": [
+          "dom",
+          "es2019"
+      ],
+      "jsx": "react",
+      "declaration": true,
+      "declarationMap": true,
+      "outDir": "./dist"
+  },
+  "include": ["src/*.ts", "src/*.tsx","src/*/*/*.ts", "src/*/*/*.tsx","src/*/*/*.flyde.ts"],
+  "exclude": [
+      "node_modules",
+      "dist"
+  ]
+}

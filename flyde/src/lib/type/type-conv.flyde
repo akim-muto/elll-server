@@ -1,0 +1,86 @@
+imports:
+  "@flyde/stdlib":
+    - InlineValue
+  includeThenRun.flyde.ts:
+    - includeThenRun
+  typeListObj.flyde:
+    - typeListObj
+node:
+  instances:
+    - pos:
+        x: -510.9747900390625
+        y: -812.4865539550781
+      id: rm1wd1fly7p3p6uyoxafew4u
+      inputConfig: {}
+      nodeId: InlineValue__rm1wd1fly7p3p6uyoxafew4u
+      macroId: InlineValue
+      macroData:
+        type: string
+        value: string
+        label: '"string"'
+    - pos:
+        x: -442.75483642578126
+        y: -899.5313879394531
+      id: hfe36808gano1yb91oanu76m
+      inputConfig: {}
+      nodeId: InlineValue__hfe36808gano1yb91oanu76m
+      macroId: InlineValue
+      macroData:
+        type: string
+        value: number
+        label: '"number"'
+    - pos:
+        x: -70.85361816406248
+        y: -913.565634765625
+      id: pu3rztak6r7b3m422bu670cr
+      inputConfig: {}
+      nodeId: InlineValue__pu3rztak6r7b3m422bu670cr
+      macroId: InlineValue
+      macroData:
+        type: string
+        value: json
+        label: '"json"'
+    - pos:
+        x: -249.2151025390625
+        y: -942.53560546875
+      id: vj5iyjzjeqr3wnnhlffgp3gj
+      inputConfig: {}
+      nodeId: InlineValue__vj5iyjzjeqr3wnnhlffgp3gj
+      macroId: InlineValue
+      macroData:
+        type: string
+        value: boolean
+        label: '"boolean"'
+    - pos:
+        x: -169.08352294921872
+        y: -487.15068359375005
+      id: includeThenRun-le049i5
+      inputConfig: {}
+      nodeId: includeThenRun
+    - pos:
+        x: 168.8604736328125
+        y: -917.3942138671875
+      id: typeListObj-4j149r7
+      inputConfig: {}
+      nodeId: typeListObj
+  connections:
+    - from:
+        insId: typeListObj-4j149r7
+        pinId: list
+      to:
+        insId: includeThenRun-le049i5
+        pinId: array
+    - from:
+        insId: rm1wd1fly7p3p6uyoxafew4u
+        pinId: value
+      to:
+        insId: includeThenRun-le049i5
+        pinId: target
+  id: Example
+  inputs: {}
+  outputs: {}
+  inputsPosition: {}
+  outputsPosition:
+    result:
+      x: -23.264428942324532
+      y: 237.25953921502617

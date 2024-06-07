@@ -1,0 +1,92 @@
+imports:
+  "@flyde/stdlib":
+    - CodeExpression
+node:
+  instances:
+    - pos:
+        x: -245.0313720703125
+        y: -310.74540893554683
+      id: jbd7b6cpw6rfhz4qh7uhzq3t
+      inputConfig: {}
+      nodeId: CodeExpression__jbd7b6cpw6rfhz4qh7uhzq3t
+      macroId: CodeExpression
+      macroData:
+        value: |-
+          {
+            base : inputs.a,
+            new : inputs.b
+          }
+        label: '"targetType:{a:base, b:new"'
+    - pos:
+        x: -73.52960449218745
+        y: -122.73299804687503
+      id: jskw84mr9aq66erreipr389b
+      inputConfig: {}
+      nodeId: CodeExpression__jskw84mr9aq66erreipr389b
+      macroId: CodeExpression
+      macroData:
+        value: |-
+          {
+            targetType:inputs.a,
+            value:inputs.b
+          }
+        label: '"targetTypeObj"'
+  connections:
+    - from:
+        insId: jbd7b6cpw6rfhz4qh7uhzq3t
+        pinId: value
+      to:
+        insId: jskw84mr9aq66erreipr389b
+        pinId: a
+    - from:
+        insId: __this
+        pinId: baseType
+      to:
+        insId: jbd7b6cpw6rfhz4qh7uhzq3t
+        pinId: a
+    - from:
+        insId: __this
+        pinId: newType
+      to:
+        insId: jbd7b6cpw6rfhz4qh7uhzq3t
+        pinId: b
+    - from:
+        insId: __this
+        pinId: value
+      to:
+        insId: jskw84mr9aq66erreipr389b
+        pinId: b
+    - from:
+        insId: jskw84mr9aq66erreipr389b
+        pinId: value
+      to:
+        insId: __this
+        pinId: object
+  id: targetTypeObj
+  inputs:
+    baseType:
+      mode: required
+    newType:
+      mode: required
+    value:
+      mode: required
+  outputs:
+    object:
+      delayed: false
+  inputsPosition:
+    baseType:
+      x: -325.86406005859374
+      y: -467.1621533203125
+    newType:
+      x: -107.00610595703125
+      y: -466.89556884765625
+    value:
+      x: 168.309384765625
+      y: -466.30222900390623
+  outputsPosition:
+    result:
+      x: -23.264428942324532
+      y: 237.25953921502617
+    object:
+      x: 0.017270507812497726
+      y: 37.85145751953124
